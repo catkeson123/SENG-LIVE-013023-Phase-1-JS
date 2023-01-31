@@ -3,12 +3,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <!-- Css style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Data file -->
-    <script src="src/data.js"></script>
+    <script defer src="src/data.js"></script>
     <!-- JavaScript file -->
     <!-- defer - this file will load after the DOM loads -->
     <script defer src="src/index.js"></script>
@@ -24,20 +24,26 @@
       <main>
         <div class="list">
           <ul id="book-list">
-            <li class="list-li">
-              <h3>Eloquent JavaScript : A Modern Introduction to Programming</h3>
+            <!-- <li class="list-li">
+              <h3>
+                Eloquent JavaScript : A Modern Introduction to Programming
+              </h3>
               <p>Marjin Haverbeke</p>
               <p>$10.00</p>
-              <img src="https://images-na.ssl-images-amazon.com/images/I/51IKycqTPUL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Eloquent JavaScript cover"/>
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/51IKycqTPUL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
+                alt="Eloquent JavaScript cover"
+              />
               <button>Delete</button>
-            </li>
+            </li> -->
           </ul>
         </div>
       </main>
       <footer>
-        <div id="store"></div>
+        <div id="location"></div>
         <div id="number"></div>
         <div id="address"></div>
+        <div id="hours"></div>
       </footer>
     </div>
     <div id="templates" style="display: none">
@@ -45,7 +51,7 @@
         <h3 class="title"></h3>
         <p class="author"></p>
         <p class="price"></p>
-        <img src="" alt=""/>
+        <img src="" alt="" />
         <button>Delete</button>
       </li>
     </div>
