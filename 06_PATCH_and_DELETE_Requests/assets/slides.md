@@ -216,11 +216,11 @@ function refreshListFixed() {
   fetch('http://localhost:3000/comments')
     .then(res => res.json())
     .then(comments => {
-      comments.forEach(renderComment)
+      comments.forEach(renderCommentFixed)
     })
 }
 
-function renderComment(comment) {
+function renderCommentFixed(comment) {
   const li = document.createElement('li');
   li.dataset.commentId = comment.id;
   li.textContent = `${comment.body} `;
